@@ -50,7 +50,6 @@ const stats = [
 export default function Home() {
   return (
     <main>
-      <SiteHeader />
       <section className="hero section">
         <div className="heroInner">
           <p className="eyebrow">Software, Automation, IT</p>
