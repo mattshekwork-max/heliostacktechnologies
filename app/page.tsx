@@ -159,22 +159,6 @@ export default function Home() {
   );
 }
 
-function SiteHeader() {
-  return (
-    <header className="siteHeader">
-      <a className="brand" href="#">
-        <span className="brandMark">H</span>
-        <span>HelioStack Technologies</span>
-      </a>
-      <nav aria-label="Primary navigation">
-        <a href="#portfolio">Portfolio</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-  );
-}
-
 function SiteFooter() {
   return (
     <footer className="siteFooter">
