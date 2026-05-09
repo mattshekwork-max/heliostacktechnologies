@@ -9,6 +9,15 @@ const ventures = [
     href: "https://pickuphone.com",
   },
   {
+    category: "3D Provenance",
+    name: "SplatChain",
+    description:
+      "A trust layer for 3D Gaussian Splats — prove every capture is real, own its chain of custody, and verify authenticity on-chain.",
+    status: "In Development",
+    tone: "building",
+    href: "/splatchain",
+  },
+  {
     category: "Solar Operations",
     name: "SolarOps",
     description:

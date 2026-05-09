@@ -396,6 +396,491 @@ p {
   margin: 0;
 }
 
+/* ── SplatChain Premium Styles ── */
+
+.premiumHero {
+  align-items: center;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr;
+  min-height: calc(100vh - 4.5rem);
+}
+
+.premiumHeroCopy h1 {
+  max-width: none;
+}
+
+.premiumLead {
+  font-size: clamp(1.1rem, 2.2vw, 1.35rem);
+  line-height: 1.6;
+  max-width: 560px;
+}
+
+.miniTrustRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.miniTrustItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.miniTrustItem strong {
+  font-size: 1.4rem;
+  letter-spacing: -0.02em;
+}
+
+.miniTrustItem span {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.baseBadgeValue {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.4rem;
+}
+
+.baseBlueSquare {
+  background: #0052ff;
+  border-radius: 3px;
+  display: inline-block;
+  height: 0.85rem;
+  width: 0.85rem;
+}
+
+/* Hero Visual Card */
+
+.heroVisualCard {
+  background: linear-gradient(180deg, var(--panel-strong), var(--panel));
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 320px;
+  overflow: hidden;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.visualGlow {
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.12;
+  position: absolute;
+  z-index: 0;
+}
+
+.visualGlowOne {
+  background: var(--primary);
+  height: 14rem;
+  right: -2rem;
+  top: -2rem;
+  width: 14rem;
+}
+
+.visualGlowTwo {
+  background: var(--accent);
+  bottom: -1rem;
+  height: 10rem;
+  left: -1rem;
+  width: 10rem;
+}
+
+.visualHeader {
+  align-items: center;
+  display: flex;
+  gap: 0.75rem;
+  position: relative;
+  z-index: 1;
+}
+
+.visualBadge {
+  background: var(--primary);
+  border-radius: 999px;
+  color: var(--primary-foreground);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.visualStatus {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+}
+
+.flowRail {
+  display: flex;
+  gap: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.flowStep {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.75rem 0.5rem;
+  position: relative;
+}
+
+.flowStep::after {
+  background: var(--border);
+  content: "";
+  height: 1px;
+  left: 60%;
+  position: absolute;
+  right: -1rem;
+  top: 50%;
+}
+
+.flowStep:last-child::after {
+  display: none;
+}
+
+.flowIndex {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+}
+
+.flowStep strong {
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.visualPanelGrid {
+  display: grid;
+  gap: 0.65rem;
+  position: relative;
+  z-index: 1;
+}
+
+.visualPanel {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+}
+
+.visualPanel.primaryPanel {
+  border-color: rgba(68, 199, 181, 0.3);
+}
+
+.visualPanel .panelLabel {
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.visualPanel strong {
+  display: block;
+  font-size: 0.85rem;
+  margin: 0.25rem 0;
+}
+
+.visualPanel p {
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.visualPanel.codePanel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.visualPanel.codePanel code {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 4px;
+  color: var(--primary);
+  font-family: "SF Mono", "Fira Code", monospace;
+  font-size: 0.78rem;
+  padding: 0.4rem 0.6rem;
+}
+
+/* Premium Section Headers */
+
+.premiumSectionHeader {
+  max-width: 720px;
+}
+
+.premiumSectionHeader p:not(.eyebrow) {
+  max-width: 62ch;
+}
+
+/* Thesis Strip */
+
+.thesisStripSection {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.thesisStrip {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+.thesisCard {
+  background: linear-gradient(180deg, var(--panel-strong), var(--panel));
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.thesisLabel {
+  color: var(--primary);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.thesisCard p {
+  font-size: 0.95rem;
+  margin-top: 0.75rem;
+}
+
+/* Premium Detail Cards */
+
+.premiumDetailGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.premiumFourGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.premiumCard {
+  background: linear-gradient(180deg, var(--panel-strong), var(--panel));
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.premiumCard.featured {
+  border-color: rgba(68, 199, 181, 0.35);
+}
+
+.cardAccent {
+  background: var(--primary);
+  border-radius: 999px;
+  display: inline-block;
+  height: 0.35rem;
+  width: 2rem;
+}
+
+.premiumCard.featured .cardAccent {
+  width: 3rem;
+}
+
+.premiumCard h3 {
+  font-size: 1.2rem;
+}
+
+.premiumCard p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Premium Timeline */
+
+.premiumTimeline {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.timelineCard {
+  background: linear-gradient(180deg, var(--panel-strong), var(--panel));
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto 1fr;
+  padding: 1.25rem;
+}
+
+.timelineNumber {
+  align-items: center;
+  background: var(--primary);
+  border-radius: 8px;
+  color: var(--primary-foreground);
+  display: flex;
+  font-size: 0.9rem;
+  font-weight: 800;
+  height: 2.5rem;
+  justify-content: center;
+  width: 2.5rem;
+}
+
+.timelineCard h3 {
+  font-size: 1.1rem;
+}
+
+.timelineCard p {
+  font-size: 0.88rem;
+  margin: 0;
+}
+
+/* Use Cases */
+
+.premiumUseCases {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.premiumList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.premiumListItem {
+  align-items: center;
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: auto 1fr;
+}
+
+.detailBullet {
+  background: var(--primary);
+  border-radius: 999px;
+  display: inline-block;
+  height: 0.45rem;
+  width: 0.45rem;
+}
+
+.premiumListItem p {
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Traction Grid */
+
+.tractionGrid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.tractionItem {
+  align-items: center;
+  background: linear-gradient(180deg, var(--panel-strong), var(--panel));
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: auto 1fr;
+  font-size: 0.92rem;
+  padding: 1rem 1.25rem;
+}
+
+.tractionItem.done {
+  border-color: rgba(68, 199, 181, 0.25);
+}
+
+.tractionCheck {
+  align-items: center;
+  display: flex;
+  height: 1.5rem;
+  justify-content: center;
+  width: 1.5rem;
+}
+
+.tractionCheck svg {
+  height: 1.1rem;
+  width: 1.1rem;
+}
+
+.checkIcon {
+  color: var(--primary);
+  stroke: var(--primary);
+}
+
+.circleIcon {
+  color: var(--muted);
+  stroke: var(--muted);
+}
+
+.tractionItem.done span:last-child {
+  color: var(--foreground);
+}
+
+.tractionItem:not(.done) span:last-child {
+  color: var(--muted);
+}
+
+/* Premium CTA */
+
+.premiumCtaSection {
+  padding: 4rem 1.25rem;
+}
+
+.premiumCtaCard {
+  background: linear-gradient(180deg, var(--panel-strong), var(--panel));
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr auto;
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 2.5rem;
+}
+
+.premiumCtaCard h2 {
+  max-width: none;
+}
+
+.premiumCtaActions {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  justify-content: center;
+}
+
+/* SplatChain Narrow */
+
+.narrow {
+  max-width: 780px;
+}
+
 @media (max-width: 760px) {
   .siteHeader,
   .siteFooter {
@@ -428,5 +913,41 @@ p {
 
   .ventureCard {
     min-height: 17rem;
+  }
+
+  .premiumHero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .heroVisualCard {
+    display: none;
+  }
+
+  .thesisStrip {
+    grid-template-columns: 1fr;
+  }
+
+  .premiumDetailGrid,
+  .premiumFourGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .premiumTimeline {
+    grid-template-columns: 1fr;
+  }
+
+  .premiumUseCases {
+    grid-template-columns: 1fr;
+  }
+
+  .tractionGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .premiumCtaCard {
+    grid-template-columns: 1fr;
   }
 }
