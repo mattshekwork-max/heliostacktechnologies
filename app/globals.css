@@ -819,19 +819,51 @@ p {
 }
 
 .premiumCard {
+  backdrop-filter: blur(20px);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(93, 120, 255, 0.16), transparent 36%),
+    radial-gradient(circle at 0% 100%, rgba(68, 199, 181, 0.1), transparent 40%),
+    linear-gradient(180deg, rgba(15, 22, 38, 0.95), rgba(8, 13, 27, 0.98));
+  border: 1px solid rgba(95, 121, 255, 0.18);
   border-radius: 20px;
+  box-shadow:
+    0 22px 52px rgba(4, 8, 20, 0.34),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    inset 0 0 0 1px rgba(95, 121, 255, 0.06);
   min-height: 14rem;
   overflow: hidden;
   position: relative;
 }
 
+.premiumCard::before {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent 28%);
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.premiumCard > * {
+  position: relative;
+  z-index: 1;
+}
+
 .cardAccent {
-  background: linear-gradient(90deg, var(--primary), rgba(125, 101, 255, 0.85));
+  background: linear-gradient(90deg, #3dd9d6 0%, #6f7cff 52%, #9d6cff 100%);
+  box-shadow: 0 0 24px rgba(104, 114, 255, 0.28);
   height: 3px;
   left: 0;
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.premiumCard.featured {
+  border-color: rgba(108, 134, 255, 0.28);
+  box-shadow:
+    0 26px 60px rgba(8, 14, 30, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    inset 0 0 0 1px rgba(95, 121, 255, 0.09);
 }
 
 .premiumTimeline {
