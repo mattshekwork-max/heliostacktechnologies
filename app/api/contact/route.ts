@@ -52,7 +52,7 @@ export async function POST(req: NextRequest) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      from: "SplatChain <onboarding@resend.dev>",
+      from: "SplatChain <support@heliostacktechnologies.com>",
       to: ["mattshekwork@gmail.com"],
       reply_to: email,
       subject,
