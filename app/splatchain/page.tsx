@@ -354,7 +354,7 @@ export default function SplatChainPage() {
 
       {/* CTA */}
       <section className="section premiumCtaSection">
-        <div className="premiumCtaCard">
+        <div className="premiumCtaCard splatCtaCard">
           <div>
             <p className="eyebrow">Next step</p>
             <h2>Follow the build or start the conversation.</h2>
@@ -380,7 +380,7 @@ export default function SplatChainPage() {
               </a>
             </div>
           </div>
-          <div className="ctaFormSide">
+          <div className="ctaFormSide splatFormShell">
             <ContactForm />
           </div>
         </div>

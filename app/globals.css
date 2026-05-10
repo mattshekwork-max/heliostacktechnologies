@@ -1417,6 +1417,48 @@ p {
   min-width: 280px;
 }
 
+.splatCtaCard {
+  background:
+    radial-gradient(circle at 100% 0%, rgba(87, 121, 255, 0.18), transparent 34%),
+    radial-gradient(circle at 0% 100%, rgba(68, 199, 181, 0.14), transparent 38%),
+    linear-gradient(180deg, rgba(12, 18, 34, 0.94), rgba(8, 12, 24, 0.98));
+  border-color: rgba(98, 123, 255, 0.18);
+  box-shadow:
+    0 26px 70px rgba(4, 8, 20, 0.44),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    inset 0 0 0 1px rgba(87, 121, 255, 0.08);
+}
+
+.splatFormShell {
+  backdrop-filter: blur(20px);
+  background:
+    linear-gradient(180deg, rgba(15, 24, 46, 0.9), rgba(10, 16, 34, 0.96));
+  border: 1px solid rgba(98, 123, 255, 0.24);
+  border-radius: 22px;
+  box-shadow:
+    0 20px 60px rgba(10, 16, 34, 0.48),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 0 0 1px rgba(87, 121, 255, 0.08);
+  padding: 1.15rem;
+  position: relative;
+}
+
+.splatFormShell::before {
+  background:
+    radial-gradient(circle at top right, rgba(118, 92, 255, 0.18), transparent 42%),
+    radial-gradient(circle at bottom left, rgba(68, 199, 181, 0.12), transparent 46%);
+  border-radius: inherit;
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.splatFormShell > * {
+  position: relative;
+  z-index: 1;
+}
+
 .contactForm {
   display: flex;
   flex-direction: column;
@@ -1436,32 +1478,45 @@ p {
 }
 
 .formField label {
-  color: var(--soft);
+  color: #c9d5ff;
   font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
+  font-weight: 700;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .formField input,
 .formField textarea {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--border);
-  border-radius: 6px;
+  background: linear-gradient(180deg, rgba(16, 24, 43, 0.92), rgba(11, 18, 34, 0.96));
+  border: 1px solid rgba(96, 119, 255, 0.22);
+  border-radius: 12px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
   color: var(--foreground);
   font-family: inherit;
-  font-size: 0.9rem;
-  padding: 0.65rem 0.85rem;
-  transition: border-color 160ms ease;
+  font-size: 0.92rem;
+  padding: 0.8rem 0.95rem;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    background 160ms ease;
+}
+
+.formField input::placeholder,
+.formField textarea::placeholder {
+  color: rgba(201, 213, 255, 0.42);
 }
 
 .formField input:focus,
 .formField textarea:focus {
-  border-color: var(--primary);
+  border-color: rgba(118, 92, 255, 0.7);
+  box-shadow:
+    0 0 0 1px rgba(118, 92, 255, 0.35),
+    0 0 24px rgba(87, 121, 255, 0.16);
   outline: none;
 }
 
 .formField textarea {
+  min-height: 8.5rem;
   resize: vertical;
 }
 
@@ -1469,23 +1524,45 @@ p {
   align-self: flex-start;
 }
 
+.splatFormShell .button.primary {
+  background: linear-gradient(135deg, #5c7cff 0%, #47d6c9 100%);
+  border-color: rgba(130, 167, 255, 0.45);
+  box-shadow: 0 12px 28px rgba(70, 112, 255, 0.24);
+  color: #08111f;
+}
+
+.splatFormShell .button.primary:hover {
+  box-shadow: 0 16px 34px rgba(70, 112, 255, 0.34);
+}
+
 .formError {
-  color: var(--danger);
+  color: #ff9f8a;
   font-size: 0.85rem;
   margin: 0;
 }
 
 .formSuccess {
   align-items: center;
+  backdrop-filter: blur(18px);
+  background:
+    radial-gradient(circle at top right, rgba(118, 92, 255, 0.16), transparent 42%),
+    linear-gradient(180deg, rgba(13, 21, 40, 0.92), rgba(10, 16, 31, 0.97));
+  border: 1px solid rgba(98, 123, 255, 0.24);
+  border-radius: 22px;
+  box-shadow:
+    0 20px 60px rgba(10, 16, 34, 0.48),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   justify-content: center;
+  min-height: 100%;
+  padding: 2rem 1.5rem;
   text-align: center;
 }
 
 .formSuccess strong {
-  color: var(--primary);
+  color: #8bc8ff;
   font-size: 1.1rem;
 }
 
