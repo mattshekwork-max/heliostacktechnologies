@@ -881,6 +881,91 @@ p {
   max-width: 780px;
 }
 
+/* CTA Links + Form */
+
+.ctaLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 1.5rem;
+}
+
+.ctaFormSide {
+  min-width: 280px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.formRow {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.formField label {
+  color: var(--soft);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.formField input,
+.formField textarea {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--foreground);
+  font-family: inherit;
+  font-size: 0.9rem;
+  padding: 0.65rem 0.85rem;
+  transition: border-color 160ms ease;
+}
+
+.formField input:focus,
+.formField textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.formField textarea {
+  resize: vertical;
+}
+
+.contactForm .button {
+  align-self: flex-start;
+}
+
+.formError {
+  color: var(--danger);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.formSuccess {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.formSuccess strong {
+  color: var(--primary);
+  font-size: 1.1rem;
+}
+
 @media (max-width: 760px) {
   .siteHeader,
   .siteFooter {
@@ -948,6 +1033,10 @@ p {
   }
 
   .premiumCtaCard {
+    grid-template-columns: 1fr;
+  }
+
+  .formRow {
     grid-template-columns: 1fr;
   }
 }

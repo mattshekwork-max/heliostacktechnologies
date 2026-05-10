@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
   title: "SplatChain | HelioStack Technologies",
@@ -362,22 +363,25 @@ export default function SplatChainPage() {
               bringing premium trust signals to 3D provenance workflows.
               Interested in investing, piloting, or integrating? Reach out.
             </p>
+            <div className="ctaLinks">
+              <a
+                className="button primary"
+                href="https://github.com/mattshekwork-max/splatchain"
+              >
+                View Repository
+                <ArrowUpRightIcon />
+              </a>
+              <a
+                className="button secondary"
+                href="mailto:support@heliostacktechnologies.com"
+              >
+                Email Us
+                <ArrowRightIcon />
+              </a>
+            </div>
           </div>
-          <div className="actions premiumCtaActions">
-            <a
-              className="button primary"
-              href="https://github.com/mattshekwork-max/splatchain"
-            >
-              View Repository
-              <ArrowUpRightIcon />
-            </a>
-            <a
-              className="button secondary"
-              href="mailto:support@heliostacktechnologies.com"
-            >
-              Contact HelioStack
-              <ArrowRightIcon />
-            </a>
+          <div className="ctaFormSide">
+            <ContactForm />
           </div>
         </div>
       </section>
