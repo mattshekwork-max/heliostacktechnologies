@@ -1,12 +1,21 @@
 const ventures = [
   {
+    category: "Follow-up Automation",
+    name: "CatchFlow",
+    description:
+      "Catch missed calls, buried emails, and texts before they turn into lost revenue with one calm, prioritized follow-up queue.",
+    status: "Live Prototype",
+    tone: "active",
+    href: "/catchflow",
+  },
+  {
     category: "AI Receptionist",
     name: "Pick.UP",
     description:
       "An AI phone receptionist for small service businesses that answers calls, captures intent, and sends clean follow-up summaries.",
     status: "Active",
     tone: "active",
-    href: "https://pickuphone.com",
+    href: "/pickup",
   },
   {
     category: "3D Provenance",
@@ -50,9 +59,9 @@ const principles = [
 ];
 
 const stats = [
-  ["1", "Active Product"],
+  ["2", "Active Products"],
   ["2+", "Years Building"],
-  ["3", "Core Service Areas"],
+  ["4", "Portfolio Projects"],
   ["100%", "Operator Focus"],
 ];
 
@@ -92,7 +101,11 @@ export default function Home() {
       <section className="section" id="portfolio">
         <div className="sectionHeader">
           <p className="eyebrow">Portfolio</p>
-          <h2>Companies and products we are building</h2>
+          <h2>Products shipping now, with the next wave already taking shape.</h2>
+          <p className="sectionSubhead">
+            CatchFlow and Pick.UP lead the current lineup. SplatChain and
+            SolarOps show where HelioStack is expanding next.
+          </p>
         </div>
         <div className="portfolioGrid">
           {ventures.map((venture) => (
