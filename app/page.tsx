@@ -201,7 +201,7 @@ export default function Home() {
           Partnerships, product questions, IT support, and early customer
           conversations are welcome.
         </p>
-        <a className="button primary" href="mailto:mattshekwork@gmail.com?subject=HelioStack%20Inquiry">
+        <a className="button primary" href="mailto:support@heliostacktechnologies.com?subject=HelioStack%20Inquiry">
           Contact HelioStack
           <ArrowRightIcon />
         </a>
@@ -222,7 +222,7 @@ function SiteFooter() {
       <nav aria-label="Footer navigation">
         <a href="#portfolio">Portfolio</a>
         <a href="#about">About</a>
-        <a href="mailto:mattshekwork@gmail.com?subject=HelioStack%20Inquiry">Contact</a>
+        <a href="mailto:support@heliostacktechnologies.com?subject=HelioStack%20Inquiry">Contact</a>
       </nav>
       <p>© 2026 HelioStack Technologies LLC. All rights reserved.</p>
     </footer>

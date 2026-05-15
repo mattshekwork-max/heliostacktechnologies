@@ -385,7 +385,7 @@ export default function SplatChainPage() {
               </a>
               <a
                 className="button secondary"
-                href="mailto:mattshekwork@gmail.com?subject=HelioStack%20Inquiry"
+                href="mailto:support@heliostacktechnologies.com?subject=HelioStack%20Inquiry"
               >
                 Email Us
                 <ArrowRightIcon />
@@ -413,7 +413,7 @@ function SiteFooter() {
       <nav aria-label="Footer navigation">
         <a href="/">Home</a>
         <a href="/#portfolio">Portfolio</a>
-        <a href="mailto:mattshekwork@gmail.com?subject=HelioStack%20Inquiry">Contact</a>
+        <a href="mailto:support@heliostacktechnologies.com?subject=HelioStack%20Inquiry">Contact</a>
       </nav>
       <p>&copy; 2026 HelioStack Technologies LLC. All rights reserved.</p>
     </footer>

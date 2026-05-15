@@ -110,7 +110,7 @@ export default function SolarOpsPage() {
             ))}
           </div>
           <div className="actions">
-            <a className="button primary" href="mailto:mattshekwork@gmail.com?subject=HelioStack%20Inquiry">
+            <a className="button primary" href="mailto:support@heliostacktechnologies.com?subject=HelioStack%20Inquiry">
               Start a Conversation
               <ArrowRightIcon />
             </a>
@@ -264,7 +264,7 @@ export default function SolarOpsPage() {
             </p>
           </div>
           <div className="actions premiumCtaActions">
-            <a className="button primary" href="mailto:mattshekwork@gmail.com?subject=HelioStack%20Inquiry">
+            <a className="button primary" href="mailto:support@heliostacktechnologies.com?subject=HelioStack%20Inquiry">
               Contact HelioStack
               <ArrowRightIcon />
             </a>
@@ -287,7 +287,7 @@ function SiteFooter() {
       <nav aria-label="Footer navigation">
         <a href="/">Home</a>
         <a href="/#portfolio">Portfolio</a>
-        <a href="mailto:mattshekwork@gmail.com?subject=HelioStack%20Inquiry">Contact</a>
+        <a href="mailto:support@heliostacktechnologies.com?subject=HelioStack%20Inquiry">Contact</a>
       </nav>
       <p>© 2026 HelioStack Technologies LLC. All rights reserved.</p>
     </footer>

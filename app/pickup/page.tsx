@@ -219,7 +219,7 @@ export default function PickUpPage() {
               Visit Pick.UP
               <ArrowUpRightIcon />
             </a>
-            <a className="button secondary" href="mailto:mattshekwork@gmail.com?subject=HelioStack%20Inquiry">
+            <a className="button secondary" href="mailto:support@heliostacktechnologies.com?subject=HelioStack%20Inquiry">
               Contact HelioStack
               <ArrowRightIcon />
             </a>
@@ -242,7 +242,7 @@ function SiteFooter() {
       <nav aria-label="Footer navigation">
         <a href="/">Home</a>
         <a href="/#portfolio">Portfolio</a>
-        <a href="mailto:mattshekwork@gmail.com?subject=HelioStack%20Inquiry">Contact</a>
+        <a href="mailto:support@heliostacktechnologies.com?subject=HelioStack%20Inquiry">Contact</a>
       </nav>
       <p>© 2026 HelioStack Technologies LLC. All rights reserved.</p>
     </footer>

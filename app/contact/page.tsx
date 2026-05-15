@@ -50,8 +50,8 @@ export default function ContactPage() {
           <div className="ctaFormSide splatFormShell">
             <div className="formSuccess">
               <strong>Email HelioStack directly.</strong>
-              <p>mattshekwork@gmail.com</p>
-              <a className="button primary" href="mailto:mattshekwork@gmail.com?subject=HelioStack%20Inquiry">
+              <p>support@heliostacktechnologies.com</p>
+              <a className="button primary" href="mailto:support@heliostacktechnologies.com?subject=HelioStack%20Inquiry">
                 Open Email
               </a>
             </div>
@@ -74,7 +74,7 @@ function SiteFooter() {
       <nav aria-label="Footer navigation">
         <a href="/">Home</a>
         <a href="/#portfolio">Portfolio</a>
-        <a href="mailto:mattshekwork@gmail.com?subject=HelioStack%20Inquiry">Contact</a>
+        <a href="mailto:support@heliostacktechnologies.com?subject=HelioStack%20Inquiry">Contact</a>
       </nav>
       <p>© 2026 HelioStack Technologies LLC. All rights reserved.</p>
     </footer>
