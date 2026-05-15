@@ -233,7 +233,7 @@ export default function CatchFlowPage() {
               Open Prototype
               <ArrowUpRightIcon />
             </a>
-            <a className="button secondary" href="mailto:support@heliostacktechnologies.com">
+            <a className="button secondary" href="/contact#contact-form">
               Contact HelioStack
               <ArrowRightIcon />
             </a>
@@ -256,7 +256,7 @@ function SiteFooter() {
       <nav aria-label="Footer navigation">
         <a href="/">Home</a>
         <a href="/#portfolio">Portfolio</a>
-        <a href="mailto:support@heliostacktechnologies.com">Contact</a>
+        <a href="/contact#contact-form">Contact</a>
       </nav>
       <p>© 2026 HelioStack Technologies LLC. All rights reserved.</p>
     </footer>
