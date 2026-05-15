@@ -4,6 +4,29 @@ export const metadata: Metadata = {
   title: "CatchFlow | HelioStack Technologies",
   description:
     "CatchFlow turns missed calls, buried emails, and texts into a calm, prioritized follow-up queue for small service businesses.",
+  openGraph: {
+    title: "CatchFlow — Calm follow-up for missed leads",
+    description:
+      "CatchFlow helps small service businesses recover leads from missed calls, buried emails, and texts without inbox chaos.",
+    url: "https://heliostacktechnologies.com/catchflow",
+    siteName: "HelioStack Technologies",
+    type: "website",
+    images: [
+      {
+        url: "https://heliostacktechnologies.com/social/catchflow-card.png",
+        width: 1200,
+        height: 630,
+        alt: "CatchFlow social preview image",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CatchFlow — Calm follow-up for missed leads",
+    description:
+      "CatchFlow helps small service businesses recover leads from missed calls, buried emails, and texts without inbox chaos.",
+    images: ["https://heliostacktechnologies.com/social/catchflow-card.png"],
+  },
 };
 
 const features = [
@@ -94,7 +117,7 @@ export default function CatchFlowPage() {
             ))}
           </div>
           <div className="actions">
-            <a className="button primary" href="https://catchflow-ten.vercel.app">
+            <a className="button primary" href="https://catchflow-hermes.vercel.app">
               Open Prototype
               <ArrowUpRightIcon />
             </a>
@@ -229,11 +252,11 @@ export default function CatchFlowPage() {
             </p>
           </div>
           <div className="actions premiumCtaActions">
-            <a className="button primary" href="https://catchflow-ten.vercel.app">
+            <a className="button primary" href="https://catchflow-hermes.vercel.app">
               Open Prototype
               <ArrowUpRightIcon />
             </a>
-            <a className="button secondary" href="/contact#contact-form">
+            <a className="button secondary" href="mailto:mattshekwork@gmail.com?subject=HelioStack%20Inquiry">
               Contact HelioStack
               <ArrowRightIcon />
             </a>
@@ -256,7 +279,7 @@ function SiteFooter() {
       <nav aria-label="Footer navigation">
         <a href="/">Home</a>
         <a href="/#portfolio">Portfolio</a>
-        <a href="/contact#contact-form">Contact</a>
+        <a href="mailto:mattshekwork@gmail.com?subject=HelioStack%20Inquiry">Contact</a>
       </nav>
       <p>© 2026 HelioStack Technologies LLC. All rights reserved.</p>
     </footer>

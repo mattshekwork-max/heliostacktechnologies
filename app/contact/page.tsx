@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import ContactForm from "../components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact | HelioStack Technologies",
@@ -32,8 +31,8 @@ export default function ContactPage() {
             <p className="eyebrow">Reach out</p>
             <h2>A real contact path — not an empty mail draft.</h2>
             <p>
-              Use the form to ask about HelioStack products, live demos,
-              implementation help, or early-stage collaboration.
+              If someone wants to reach HelioStack, this should open a direct
+              email to Matt so he can respond personally.
             </p>
             <div className="detailList premiumList">
               {[
@@ -48,12 +47,14 @@ export default function ContactPage() {
               ))}
             </div>
           </div>
-          <div id="contact-form" className="ctaFormSide splatFormShell">
-            <ContactForm
-              type="general"
-              heading="Send a message"
-              successMessage="We'll get back to you shortly."
-            />
+          <div className="ctaFormSide splatFormShell">
+            <div className="formSuccess">
+              <strong>Email HelioStack directly.</strong>
+              <p>mattshekwork@gmail.com</p>
+              <a className="button primary" href="mailto:mattshekwork@gmail.com?subject=HelioStack%20Inquiry">
+                Open Email
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -73,7 +74,7 @@ function SiteFooter() {
       <nav aria-label="Footer navigation">
         <a href="/">Home</a>
         <a href="/#portfolio">Portfolio</a>
-        <a href="/contact#contact-form">Contact</a>
+        <a href="mailto:mattshekwork@gmail.com?subject=HelioStack%20Inquiry">Contact</a>
       </nav>
       <p>© 2026 HelioStack Technologies LLC. All rights reserved.</p>
     </footer>

@@ -1,3 +1,34 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "HelioStack Technologies LLC - Building Tomorrow",
+  description:
+    "A holding company focused on building software, automation, and IT products for small businesses.",
+  openGraph: {
+    title: "HelioStack Technologies — Useful systems for small business operators",
+    description:
+      "Operator-first SaaS products, AI workflow tools, and practical technology services for clearer operations and faster follow-up.",
+    url: "https://heliostacktechnologies.com",
+    siteName: "HelioStack Technologies",
+    type: "website",
+    images: [
+      {
+        url: "https://heliostacktechnologies.com/social/heliostack-card.png",
+        width: 1200,
+        height: 630,
+        alt: "HelioStack Technologies social preview image",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HelioStack Technologies — Useful systems for small business operators",
+    description:
+      "Operator-first SaaS products, AI workflow tools, and practical technology services for clearer operations and faster follow-up.",
+    images: ["https://heliostacktechnologies.com/social/heliostack-card.png"],
+  },
+};
+
 const ventures = [
   {
     category: "Follow-up Automation",
@@ -33,7 +64,7 @@ const ventures = [
       "Workflow tools for turning messy post-sale solar handoffs into operations-ready project context.",
     status: "In Development",
     tone: "building",
-    href: "#contact",
+    href: "/solarops",
   },
 ];
 
@@ -170,7 +201,7 @@ export default function Home() {
           Partnerships, product questions, IT support, and early customer
           conversations are welcome.
         </p>
-        <a className="button primary" href="/contact#contact-form">
+        <a className="button primary" href="mailto:mattshekwork@gmail.com?subject=HelioStack%20Inquiry">
           Contact HelioStack
           <ArrowRightIcon />
         </a>
@@ -191,7 +222,7 @@ function SiteFooter() {
       <nav aria-label="Footer navigation">
         <a href="#portfolio">Portfolio</a>
         <a href="#about">About</a>
-        <a href="/contact#contact-form">Contact</a>
+        <a href="mailto:mattshekwork@gmail.com?subject=HelioStack%20Inquiry">Contact</a>
       </nav>
       <p>© 2026 HelioStack Technologies LLC. All rights reserved.</p>
     </footer>

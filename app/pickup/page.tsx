@@ -4,6 +4,29 @@ export const metadata: Metadata = {
   title: "Pick.UP | HelioStack Technologies",
   description:
     "Pick.UP is an AI phone receptionist for small service businesses that answers calls, captures intent, and keeps follow-up clean.",
+  openGraph: {
+    title: "Pick.UP — AI phone receptionist for small business",
+    description:
+      "An AI phone receptionist for small service businesses that need better call coverage and sharper follow-up.",
+    url: "https://heliostacktechnologies.com/pickup",
+    siteName: "HelioStack Technologies",
+    type: "website",
+    images: [
+      {
+        url: "https://heliostacktechnologies.com/social/pickup-card.png",
+        width: 1200,
+        height: 630,
+        alt: "Pick.UP social preview image",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pick.UP — AI phone receptionist for small business",
+    description:
+      "An AI phone receptionist for small service businesses that need better call coverage and sharper follow-up.",
+    images: ["https://heliostacktechnologies.com/social/pickup-card.png"],
+  },
 };
 
 const features = [
@@ -196,7 +219,7 @@ export default function PickUpPage() {
               Visit Pick.UP
               <ArrowUpRightIcon />
             </a>
-            <a className="button secondary" href="/contact#contact-form">
+            <a className="button secondary" href="mailto:mattshekwork@gmail.com?subject=HelioStack%20Inquiry">
               Contact HelioStack
               <ArrowRightIcon />
             </a>
@@ -219,7 +242,7 @@ function SiteFooter() {
       <nav aria-label="Footer navigation">
         <a href="/">Home</a>
         <a href="/#portfolio">Portfolio</a>
-        <a href="/contact#contact-form">Contact</a>
+        <a href="mailto:mattshekwork@gmail.com?subject=HelioStack%20Inquiry">Contact</a>
       </nav>
       <p>© 2026 HelioStack Technologies LLC. All rights reserved.</p>
     </footer>

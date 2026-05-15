@@ -8,16 +8,25 @@ export const metadata: Metadata = {
   openGraph: {
     title: "SplatChain — The Trust Layer for 3D",
     description:
-      "Prove every 3D capture is real, own its chain of custody, and verify authenticity on-chain. Built for studios, archives, and platforms.",
+      "Prove every capture is real, own its chain of custody, and verify authenticity on-chain.",
     url: "https://heliostacktechnologies.com/splatchain",
     siteName: "HelioStack Technologies",
     type: "website",
+    images: [
+      {
+        url: "https://heliostacktechnologies.com/social/splatchain-card.png",
+        width: 1200,
+        height: 630,
+        alt: "SplatChain social preview image",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "SplatChain — The Trust Layer for 3D",
     description:
-      "Prove every 3D capture is real, own its chain of custody, and verify authenticity on-chain.",
+      "Prove every capture is real, own its chain of custody, and verify authenticity on-chain.",
+    images: ["https://heliostacktechnologies.com/social/splatchain-card.png"],
   },
 };
 
@@ -130,7 +139,7 @@ const tractionItems = [
   { label: "Python SDK on PyPI (splatchain)", done: true },
   { label: "Ed25519 signing + deterministic hashing", done: true },
   { label: "NFT provenance layer v0.2", done: true },
-  { label: "Base registry integration", done: false },
+  { label: "Base mainnet deployed & verified ✅", done: true },
   { label: "PlayCanvas viewer with verification UX", done: false },
   { label: "Pilot studio partnerships", done: false },
 ];
@@ -145,7 +154,7 @@ export default function SplatChainPage() {
           <h1>SplatChain</h1>
           <p className="heroCopy premiumLead">
             The trust layer for 3D. Prove every capture is real, own its chain
-            of custody, and verify authenticity on-chain.
+            of custody, and verify authenticity on-chain. Now live on Base mainnet.
           </p>
           <div className="miniTrustRow" aria-label="SplatChain highlights">
             {highlights.map((h) => (
@@ -172,8 +181,11 @@ export default function SplatChainPage() {
               View Repository
               <ArrowUpRightIcon />
             </a>
-            <a className="button secondary" href="#investment-case">
-              View Investment Case
+            <a
+              className="button secondary"
+              href="/splatchain/demo"
+            >
+              Try Live Demo
               <ArrowRightIcon />
             </a>
           </div>
@@ -285,13 +297,13 @@ export default function SplatChainPage() {
       {/* Traction / Roadmap */}
       <section className="section" id="traction">
         <div className="sectionHeader narrow premiumSectionHeader">
-          <p className="eyebrow">Traction & Roadmap</p>
-          <h2>Shipped on Sepolia. Building toward mainnet.</h2>
-          <p>
-            SplatChain has working infrastructure on testnet — contract deployed,
-            SDK live, cryptographic pipeline operational. Here's what's done
-            and what's next.
-          </p>
+        <p className="eyebrow">Traction & Roadmap</p>
+        <h2>Shipped on Sepolia. Deployed on Base mainnet.</h2>
+        <p>
+          SplatChain has working infrastructure — contract deployed on Base mainnet,
+          SDK live, cryptographic pipeline operational, and a live demo.
+          Here&apos;s what&apos;s done and what&apos;s next.
+        </p>
         </div>
         <div className="tractionGrid">
           {tractionItems.map((item) => (
@@ -373,7 +385,7 @@ export default function SplatChainPage() {
               </a>
               <a
                 className="button secondary"
-                href="/contact#contact-form"
+                href="mailto:mattshekwork@gmail.com?subject=HelioStack%20Inquiry"
               >
                 Email Us
                 <ArrowRightIcon />
@@ -401,7 +413,7 @@ function SiteFooter() {
       <nav aria-label="Footer navigation">
         <a href="/">Home</a>
         <a href="/#portfolio">Portfolio</a>
-        <a href="/contact#contact-form">Contact</a>
+        <a href="mailto:mattshekwork@gmail.com?subject=HelioStack%20Inquiry">Contact</a>
       </nav>
       <p>&copy; 2026 HelioStack Technologies LLC. All rights reserved.</p>
     </footer>
