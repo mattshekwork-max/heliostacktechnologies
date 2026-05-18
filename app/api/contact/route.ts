@@ -53,7 +53,7 @@ export async function POST(req: NextRequest) {
     },
     body: JSON.stringify({
       from: "SplatChain <support@heliostacktechnologies.com>",
-      to: ["support@heliostacktechnologies.com"],
+      to: ["mattshekwork@gmail.com"],
       reply_to: email,
       subject,
       text: textBody,
